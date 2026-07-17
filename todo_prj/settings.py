@@ -130,5 +130,11 @@ STORAGES = {
     },
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://miss-j-todo-app.onrender.com",
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 MEDIA_URL = 'media/'
 MEDIA_ROOT = 'media'
