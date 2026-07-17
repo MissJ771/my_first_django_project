@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method= "post">
+    {% csrf_token %}
+    {{forms.as_p}}
+    {% comment %} <input type="text" name="title">
+    <input type="datetime-local" name="due_time" id=""> {% endcomment %}
+    <button type="submit">submit</button>
+</form>
+    {% endblock content %}
